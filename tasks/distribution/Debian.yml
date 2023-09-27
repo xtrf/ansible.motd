@@ -19,8 +19,8 @@
 
 - name: 'Debian : configure ascii-logo'
   become: true
-  copy:
-    content: '{{ motd_ascii_art }}'
+  template:
+    src: 'ascii-logo.txt'
     dest: '/etc/default/motd-ascii_art'
     owner: root
     group: root

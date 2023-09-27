@@ -10,8 +10,8 @@
     group: root
     mode: '755'
   with_items:
-    - 01-header
-    - 00-welcome
+    - 00-header
+    - 01-welcome
     - 02-facts
     - 03-sysinfo
   tags:
